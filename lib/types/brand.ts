@@ -3,4 +3,4 @@
  *
  * @type Brand
  */
-export type Brand = "ASICS" | "Adidas" | "Nike" | "ON";
+export type Brand = "ASICS" | "Adidas" | "Nike" | "ON" | "Hoka" | "New Balance";

@@ -1,4 +1,4 @@
-import { Brand, IProductColour, IProductImage, ITag } from "@/lib/types";
+import { Brand, IProductColour, IProductImage } from "@/lib/types";
 
 /**
  * Defines all the product types associated with the products.
@@ -31,13 +31,13 @@ export type ShoeSize =
  * @interface IShoe
  * @member {Brand} brand is the brand associated with the shoe.
  * @member {IProductColour[]} colours is an array of IProductColour's associated with the shoe.
+ * @member {string} description a small summary of the shoe.
  * @member {string} handle is a unique human-friendly string for the shoe.
  * @member {number} id is a unique numeric identifier for the shoe image.
  * @member {IProductImage[]} images is an array of IProductImage's assocaited with the product.
  * @member {number} price is the price of the shoe.
  * @member {number} quantity is the amount of stock left.
  * @member {ShoeType} shoe_type is a categorization for the shoe used for filtering and searching shoes.
- * @member {}
  * @member {ITag[]} tags is an arraw of ITag's associated with the shoe.
  * @member {string} title is the name of the shoe.
  *
@@ -52,6 +52,11 @@ export interface IShoe {
 	 * @example [{id: 1, product_id: 1, value: "red"}, {id: 2, product_id: 2, value: "blue"}]
 	 */
 	colours: IProductColour[];
+
+	/**
+	 * @example A lovely red shoe.
+	 */
+	description: string;
 
 	/**
 	 * @example "trial-running"
@@ -90,9 +95,9 @@ export interface IShoe {
 	shoe_type?: ShoeType;
 
 	/**
-	 * @example [{handle: "trial-running", id: 1, title: "Trial running"}, {handle: "outdoors", id: 1, title: "Outdoors"}]
+	 * @example [{id: 1}, {id: 2}]
 	 */
-	tags: ITag[];
+	tags: { id: number }[];
 
 	/**
 	 * @example "ASICS Gel-Kayano 28"
