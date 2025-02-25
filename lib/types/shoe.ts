@@ -32,6 +32,8 @@ export type ShoeSize =
  * @member {Brand} brand is the brand associated with the shoe.
  * @member {IProductColour[]} colours is an array of IProductColour's associated with the shoe.
  * @member {string} description a small summary of the shoe.
+ * @member {boolean} featured is an identifier for highlighted shoes.
+ * @member {IProductImage} featuredImage is an image used to highlight the shoe.
  * @member {string} handle is a unique human-friendly string for the shoe.
  * @member {number} id is a unique numeric identifier for the shoe image.
  * @member {IProductImage[]} images is an array of IProductImage's assocaited with the product.
@@ -57,6 +59,13 @@ export interface IShoe {
 	 * @example A lovely red shoe.
 	 */
 	description: string;
+
+	featured: boolean;
+
+	/**
+	 * @example {alt: "A blue running shoe", colour_id: 1, height: 250, id: 1, position: 1, product_id: 1, src: "/images/products/main_image.jpg", width: 250}
+	 */
+	featuredImage?: IProductImage;
 
 	/**
 	 * @example "trial-running"

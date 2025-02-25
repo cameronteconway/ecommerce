@@ -8,6 +8,7 @@ export const shoes: IShoe[] = [
 		colours: [{ id: 1, product_id: 1, value: "Frost/Black" }],
 		description:
 			"A tip-of-the-spear product tuned for higher tempo pickups, the Cielo X1 2.0 is a must for speed seekers. Engineered with an aggressive forefoot rocker and ultra-responsive dual-density PEBA midsole with snappy carbon fibre plate, this pace-pushing road racer has been finished with a light, breathable upper.",
+		featured: false,
 		handle: "hoka-cielo-x1-20",
 		id: 1,
 		images: [
@@ -35,6 +36,17 @@ export const shoes: IShoe[] = [
 		],
 		description:
 			"Rebel by name, rebel by nature, the FuelCell Rebel v4 will change how you look at an everyday running shoe. The propulsive feel of FuelCell technology creates a remarkably responsive underfoot that can quickly adapt from long, steady runs to something shorter and more spontaneous. Additional details like a streamlined mesh upper add race-inspired accents to this dynamic upbeat shoe, designed to bring an element of fun back into your run.",
+		featured: true,
+		featuredImage: {
+			alt: "FuelCell Rebel v4 Running Shoes by New Balance in hot mango with angora and black colour scheme.",
+			colour_id: 1,
+			height: 250,
+			id: 1,
+			position: 1,
+			product_id: 1,
+			src: "/new-balance-fuelcell-rebel-v4/featured.avif",
+			width: 250,
+		},
 		handle: "new-balance-fuelcell-rebel-v4",
 		id: 1,
 		images: [
@@ -62,6 +74,7 @@ export const shoes: IShoe[] = [
 		],
 		description:
 			"Long runs or short runs. Easy days or fast sessions. The Cumulus 27 delivers comfort on all runs. Featuring lightweight FF Blast Plus foam, the midsole provides cloudlike cushioning, alongside Fluidride for a smooth transition with outstanding traction.",
+		featured: false,
 		handle: "asics-gel-cumulus-27",
 		id: 1,
 		images: [
@@ -87,6 +100,17 @@ export const shoes: IShoe[] = [
 		colours: [{ id: 1, product_id: 1, value: "Bluewash/Green Gecko/Cobalt" }],
 		description:
 			"Light, springy, fast - the Hyperion Elite 4 PB checks all the boxes. This running shoe offers a competitive edge for racing and features innovative 100% PEBA DNA GOLD cushioning alongside a carbon fibre-tuned propulsion plate.",
+		featured: true,
+		featuredImage: {
+			alt: "Hyperion Elite 4 PB Running Shoes by Brooks in a bluewash, green gecko and cobalt colour scheme.",
+			colour_id: 1,
+			height: 250,
+			id: 1,
+			position: 1,
+			product_id: 1,
+			src: "/brooks-hyerion-elite-4-pb/featured.avif",
+			width: 250,
+		},
 		handle: "brooks-hyerion-elite-4-pb",
 		id: 1,
 		images: [
@@ -112,6 +136,7 @@ export const shoes: IShoe[] = [
 		colours: [{ id: 1, product_id: 1, value: "Galactic Grey/Stellar Grey" }],
 		description:
 			"One of the hardest-working shoes in the HOKA line-up the Bondi 9 delivers peak plushness for everyday miles. Overhauled from top to bottom, Hoka has increased the stack height and added a new premium foam midsole to deliver the soft, resilient ride that's become synonymous with the Bondi.",
+		featured: false,
 		handle: "hoka-bondi-9",
 		id: 1,
 		images: [
@@ -137,6 +162,17 @@ export const shoes: IShoe[] = [
 		colours: [{ id: 1, product_id: 1, value: "Glacier/Ivory" }],
 		description:
 			"Prepare for effortless-feeling everyday runs. These shoes offer the ultimate ride sensation with soft CloudTec Phase cushioning.",
+		featured: true,
+		featuredImage: {
+			alt: "On Cloudsurfer 2 Running Shoes by On in a glacier and ivory colour scheme.",
+			colour_id: 1,
+			height: 250,
+			id: 1,
+			position: 1,
+			product_id: 1,
+			src: "/on-cloudsurfer-2/featured.avif",
+			width: 250,
+		},
 		handle: "on-cloudsurfer-2",
 		id: 1,
 		images: [
