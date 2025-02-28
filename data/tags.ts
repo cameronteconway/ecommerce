@@ -2,7 +2,7 @@ import { ITag } from "@/lib/types";
 
 export const tags: ITag[] = [
 	{ handle: "road", id: 1, title: "Road" },
-	{ handle: "racing", id: 2, title: "racing" },
+	{ handle: "racing", id: 2, title: "Racing" },
 	{ handle: "trail", id: 3, title: "Trail" },
 	{ handle: "running", id: 4, title: "Running" },
 	{ handle: "running", id: 5, title: "Running" },

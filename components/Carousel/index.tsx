@@ -1,9 +1,10 @@
 "use client";
 
 import { IProductCardProps } from "@/lib/types";
-import { ReactElement, useRef, useState } from "react";
+import { ReactElement, useEffect, useRef, useState } from "react";
 import { Progress } from "../Progress";
 import ProductCard from "./ProductCard";
+import { cn } from "@/lib/utils";
 
 interface ICarouselProps {
 	carouselCards: IProductCardProps[];
@@ -47,9 +48,45 @@ export default function Carousel({
 	carouselType,
 	title,
 }: ICarouselProps) {
-	const [progress, setProgress] = useState<number>(0);
+	const [progress, setProgress] = useState<number>(55);
 
 	const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+	useEffect(() => {
+		const scrollContainer = scrollContainerRef.current;
+		if (!scrollContainer) return;
+
+		const onWheel = (e: WheelEvent) => {
+			// Prevent default vertical scroll and allow horizontal scrolling
+			if (e.deltaY !== 0) {
+				e.preventDefault();
+				scrollContainer.scrollLeft += e.deltaY;
+			}
+		};
+
+		// Add listener for both wheel and touchpad interactions
+		scrollContainer.addEventListener("wheel", onWheel);
+
+		return () => {
+			scrollContainer.removeEventListener("wheel", onWheel);
+		};
+	}, []);
+
+	useEffect(() => {
+		scrollContainerRef.current!.addEventListener("scroll", function (e) {
+			/**
+			 * clientWidth - Width of the component within the visible screen.
+			 * scrollLeft - How far left the user has scrolled.
+			 * scrollWidth - The full width of the scrollable component.
+			 */
+			const { scrollWidth, scrollLeft, clientWidth } = e.target as HTMLElement;
+
+			const percentageScroll =
+				55 + (scrollLeft / (scrollWidth - clientWidth)) * 45;
+
+			setProgress(percentageScroll);
+		});
+	});
 
 	return (
 		<div>
@@ -68,15 +105,21 @@ export default function Carousel({
 							return (
 								<div
 									key={`card-${index}`}
-									className='w-fit flex-[0_0_80%] pl-4 first:pl-0 last:pr-4 md:flex-[0_0_60%] md:pl-4 last:md:pr-8 lg:flex-[0_0_33%] lg:pl-4 last:lg:pr-0 [&>div]:!w-full [&>div]:!min-w-min [&>div]:!max-w-full'
+									className={cn(
+										// "w-fit flex-[0_0_80%] pr-4 first:pl-0 last:pr-4",
+										// "md:flex-[0_0_60%] md:pr-4 last:md:pr-8",
+										"md:flex-[0_0_30.8%] md:px-2 first:md:flex-[0_0_30%] first:md:pl-0 first:md:pr-2 last:md:flex-[0_0_30%] last:md:pl-2 last:md:pr-0",
+										"lg:flex-[0_0_30.8%] lg:px-2 first:lg:flex-[0_0_30%] first:lg:pl-0 first:lg:pr-2 last:lg:flex-[0_0_30%] last:lg:pl-2 last:lg:pr-0",
+										"[&>div]:!w-full [&>div]:!min-w-min [&>div]:!max-w-full",
+									)}
 								>
 									{CardMap[carouselType]?.(card)}
 								</div>
 							);
 						})}
 				</div>
-				<div className='mx-auto hidden w-[120px]'>
-					<Progress value={progress} className='h-2' />
+				<div className='mx-auto hidden w-[340px] md:block'>
+					<Progress value={progress} />
 				</div>
 			</div>
 		</div>

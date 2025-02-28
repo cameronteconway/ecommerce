@@ -22,7 +22,7 @@ export default function RootLayout({
 		<html lang='en' className={inter.variable}>
 			<body className='antialiased'>
 				<Header />
-				<main className='mx-auto max-w-screen-lg px-4 md:px-0'>{children}</main>
+				<main className='mx-auto max-w-screen-lg'>{children}</main>
 			</body>
 		</html>
 	);

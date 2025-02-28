@@ -4,10 +4,11 @@
  * @type Brand
  */
 export type Brand =
-	| "ASICS"
 	| "Adidas"
-	| "Nike"
-	| "ON"
+	| "ASICS"
+	| "Brooks"
 	| "Hoka"
 	| "New Balance"
-	| "Brooks";
+	| "Nike"
+	| "ON"
+	| "Saucony";
