@@ -1,14 +1,16 @@
 "use client";
 
-import { IProductCardProps } from "@/lib/types";
 import { ReactElement, useEffect, useRef, useState } from "react";
-import { Progress } from "../Progress";
-import ProductCard from "./ProductCard";
+import { IBlogCardProps, IProductCardProps } from "@/lib/types";
+import { Progress } from "@/components/Progress";
+import ProductCard from "@/components/Carousel/ProductCard";
 import { cn } from "@/lib/utils";
+import BlogCard from "@/components/Carousel/BlogCard";
 
 interface ICarouselProps {
-	carouselCards: IProductCardProps[];
+	carouselCards: IProductCardProps[] | IBlogCardProps[];
 	carouselType: "product" | "blog";
+	description?: string;
 	title?: string;
 }
 
@@ -19,13 +21,13 @@ enum ECarouselType {
 
 type TCardMapType = {
 	[key in keyof typeof ECarouselType]: (
-		card: IProductCardProps,
+		card: IProductCardProps | IBlogCardProps,
 	) => ReactElement;
 };
 
 const CardMap: TCardMapType = {
 	product: (card: unknown) => {
-		const { id, brand, handle, image, price, shoe_type, tags, title } =
+		const { id, brand, handle, image, title } =
 			(card as IProductCardProps) ?? {};
 		return (
 			<ProductCard
@@ -33,24 +35,41 @@ const CardMap: TCardMapType = {
 				brand={brand}
 				handle={handle}
 				image={image}
-				price={price}
-				shoe_type={shoe_type}
-				tags={tags}
 				title={title}
 			/>
 		);
 	},
-	blog: (card: unknown) => {},
+	blog: (card: unknown) => {
+		const { id, title, handle, summary, image, published } =
+			(card as IBlogCardProps) ?? {};
+		return (
+			<BlogCard
+				id={id}
+				title={title}
+				handle={handle}
+				image={image}
+				summary={summary}
+				published={published}
+			/>
+		);
+	},
 };
 
 export default function Carousel({
 	carouselCards,
 	carouselType,
+	description,
 	title,
 }: ICarouselProps) {
-	const [progress, setProgress] = useState<number>(55);
+	const [progress, setProgress] = useState<number>(
+		Math.round((3.25 / carouselCards.length) * 100),
+	);
 
 	const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+	// Percentage as an integer of the progress bar to be shown by default.
+	// With the layout of the carousel rougly 3.25 carousel items are shown for > md
+	const displayedProgress = Math.round((3.25 / carouselCards.length) * 100);
 
 	useEffect(() => {
 		const scrollContainer = scrollContainerRef.current;
@@ -82,7 +101,8 @@ export default function Carousel({
 			const { scrollWidth, scrollLeft, clientWidth } = e.target as HTMLElement;
 
 			const percentageScroll =
-				55 + (scrollLeft / (scrollWidth - clientWidth)) * 45;
+				displayedProgress +
+				(scrollLeft / (scrollWidth - clientWidth)) * (100 - displayedProgress);
 
 			setProgress(percentageScroll);
 		});
@@ -90,12 +110,15 @@ export default function Carousel({
 
 	return (
 		<div>
-			{title && (
-				<h2 className='mb-4 block text-xl font-medium text-gray-900'>
-					{title}
-				</h2>
-			)}
-			<div role='region' className='flex w-full flex-col gap-6'>
+			<div className={cn("flex flex-col", title || description ? "mb-6" : "")}>
+				{title && (
+					<h2 className='block text-xl font-medium text-gray-900'>{title}</h2>
+				)}
+				{description && (
+					<p className='text-sm font-normal text-gray-600'>{description}</p>
+				)}
+			</div>
+			<div role='region' className='flex w-full flex-col gap-10'>
 				<div
 					className='no-scrollbar max-h-auto flex w-full flex-row flex-nowrap overflow-x-auto overflow-y-hidden'
 					ref={scrollContainerRef}
@@ -106,9 +129,8 @@ export default function Carousel({
 								<div
 									key={`card-${index}`}
 									className={cn(
-										// "w-fit flex-[0_0_80%] pr-4 first:pl-0 last:pr-4",
-										// "md:flex-[0_0_60%] md:pr-4 last:md:pr-8",
-										"md:flex-[0_0_30.8%] md:px-2 first:md:flex-[0_0_30%] first:md:pl-0 first:md:pr-2 last:md:flex-[0_0_30%] last:md:pl-2 last:md:pr-0",
+										"w-fit flex-[0_0_45%] pr-4 first:pl-0 last:pr-4",
+										"md:flex-[0_0_29%] md:px-2 first:md:flex-[0_0_28%] first:md:pl-0 first:md:pr-2 last:md:flex-[0_0_30%] last:md:pl-2 last:md:pr-4",
 										"lg:flex-[0_0_30.8%] lg:px-2 first:lg:flex-[0_0_30%] first:lg:pl-0 first:lg:pr-2 last:lg:flex-[0_0_30%] last:lg:pl-2 last:lg:pr-0",
 										"[&>div]:!w-full [&>div]:!min-w-min [&>div]:!max-w-full",
 									)}

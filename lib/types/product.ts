@@ -1,4 +1,4 @@
-import { Brand, ShoeType } from "@/lib/types";
+import { Brand } from "@/lib/types";
 
 /**
  * A visual reprisentation of a product.
@@ -85,8 +85,5 @@ export interface IProductCardProps {
 	brand: Brand;
 	handle: string;
 	image: IProductImage;
-	price: number;
-	shoe_type?: ShoeType;
-	tags: { id: number }[];
 	title: string;
 }

@@ -307,3 +307,15 @@ export const shoes: IShoe[] = [
 		title: "Guide 18",
 	},
 ];
+
+export const shoeCardData = shoes
+	.filter(shoe => shoe.featured === true)
+	.map(shoe => {
+		return {
+			id: shoe.id,
+			brand: shoe.brand,
+			handle: shoe.handle,
+			image: shoe.featuredImage,
+			title: shoe.title,
+		};
+	});

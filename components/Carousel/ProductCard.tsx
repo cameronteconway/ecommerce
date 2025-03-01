@@ -7,13 +7,10 @@ export default function ProductCard({
 	brand,
 	handle,
 	image,
-	price,
-	shoe_type,
-	tags,
 	title,
 }: IProductCardProps) {
 	return (
-		<Link href={"#"} className='group flex flex-col gap-2'>
+		<Link href={`shoes/${handle}/${id}`} className='group flex flex-col gap-2'>
 			<div className='relative aspect-square'>
 				<Image src={image.src} alt={image.alt} fill className='size-full' />
 			</div>
