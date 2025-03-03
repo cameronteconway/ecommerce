@@ -10,7 +10,6 @@ export interface IBlog {
 
 export interface IBlogCardProps {
 	handle: string;
-	id: number;
 	image: string;
 	published: Date;
 	summary: string;

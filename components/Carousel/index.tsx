@@ -14,6 +14,7 @@ interface ICarouselProps {
 	title?: string;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 enum ECarouselType {
 	"product" = "product",
 	"blog" = "blog",
@@ -40,11 +41,10 @@ const CardMap: TCardMapType = {
 		);
 	},
 	blog: (card: unknown) => {
-		const { id, title, handle, summary, image, published } =
+		const { title, handle, summary, image, published } =
 			(card as IBlogCardProps) ?? {};
 		return (
 			<BlogCard
-				id={id}
 				title={title}
 				handle={handle}
 				image={image}

@@ -45,7 +45,6 @@ export const blogs: IBlog[] = [
 
 export const blogCardData = blogs.map(blog => {
 	return {
-		id: blog.id,
 		title: blog.title,
 		handle: blog.handle,
 		image: blog.image,

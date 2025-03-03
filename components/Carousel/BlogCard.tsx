@@ -3,7 +3,6 @@ import { IBlogCardProps } from "@/lib/types";
 import Link from "next/link";
 
 export default function BlogCard({
-	id,
 	title,
 	handle,
 	summary,
