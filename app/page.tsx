@@ -5,7 +5,7 @@ import { IBlogCardProps, IProductCardProps } from "@/lib/types";
 
 export default function Home() {
 	return (
-		<div className='mb-96 flex flex-col gap-20'>
+		<div className='flex flex-col gap-20'>
 			<HomeVideo />
 			<section className='pl-4 pr-0 min-[1024px]:px-0'>
 				<Carousel

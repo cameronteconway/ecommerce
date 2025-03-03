@@ -112,7 +112,9 @@ export default function Carousel({
 		<div>
 			<div className={cn("flex flex-col", title || description ? "mb-6" : "")}>
 				{title && (
-					<h2 className='block text-xl font-medium text-gray-900'>{title}</h2>
+					<h2 className='block text-xl font-bold tracking-tighter text-primaryBlack'>
+						{title}
+					</h2>
 				)}
 				{description && (
 					<p className='text-sm font-normal text-gray-600'>{description}</p>

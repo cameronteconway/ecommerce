@@ -11,13 +11,15 @@ import Trail from "./Dropdown/Trail";
 
 export default function Navigation() {
 	return (
-		<div className='z-50 mx-auto max-w-screen-lg bg-gray-100/75 py-3'>
+		<div className='fixed left-0 right-0 z-50 mx-auto mb-[12px] w-fit max-w-screen-lg rounded-full bg-gray-100/75 px-4 py-2'>
 			<nav>
 				<NavigationMenu className='flex justify-around'>
 					<NavigationMenuList className='flex flex-row gap-7'>
 						<NavigationMenuItem>
 							<NavigationMenuTrigger className='group relative flex flex-row items-center gap-1 rounded-md p-1 text-lg font-light outline-none focus-visible:underline focus-visible:ring-[3px] focus-visible:ring-primaryYellow/50 data-[state=open]:font-medium [&[data-state=open]>svg]:rotate-180'>
-								<span>Road</span>
+								<span className='text-base font-bold tracking-tighter text-primaryBlack'>
+									Road
+								</span>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
 									fill='none'
@@ -39,7 +41,9 @@ export default function Navigation() {
 						</NavigationMenuItem>
 						<NavigationMenuItem>
 							<NavigationMenuTrigger className='group relative flex flex-row items-center gap-1 rounded-md p-1 text-lg font-light outline-none focus-visible:underline focus-visible:ring-[3px] focus-visible:ring-primaryYellow/50 data-[state=open]:font-medium [&[data-state=open]>svg]:rotate-180'>
-								Racing
+								<span className='text-base font-bold tracking-tighter text-primaryBlack'>
+									Racing
+								</span>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
 									fill='none'
@@ -61,7 +65,9 @@ export default function Navigation() {
 						</NavigationMenuItem>
 						<NavigationMenuItem>
 							<NavigationMenuTrigger className='group relative flex flex-row items-center gap-1 rounded-md p-1 text-lg font-light outline-none focus-visible:underline focus-visible:ring-[3px] focus-visible:ring-primaryYellow/50 data-[state=open]:font-medium [&[data-state=open]>svg]:rotate-180'>
-								Trail
+								<span className='text-base font-bold tracking-tighter text-primaryBlack'>
+									Trail
+								</span>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
 									fill='none'
