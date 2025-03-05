@@ -1,3 +1,5 @@
+"use client";
+
 import {
 	NavigationMenu,
 	NavigationMenuContent,
@@ -8,10 +10,31 @@ import {
 import Road from "./Dropdown/Road";
 import Racing from "./Dropdown/Racing";
 import Trail from "./Dropdown/Trail";
+import { useEffect, useState } from "react";
+import { cn } from "@/lib/utils";
 
-export default function Navigation() {
+export default function FixedNavigation() {
+	const [scrollPosition, setScrollPosition] = useState<number>(0);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			setScrollPosition(window.scrollY);
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
 	return (
-		<div className='fixed left-0 right-0 z-50 mx-auto mb-[12px] w-fit max-w-screen-lg rounded-full bg-gray-100/75 px-4 py-2'>
+		<div
+			className={cn(
+				"fixed left-0 right-0 top-4 z-50 mx-auto w-fit max-w-screen-lg rounded-full bg-gray-100/75 px-4 py-2 transition-all duration-300",
+				scrollPosition > 400 ? "visible opacity-100" : "invisible opacity-0",
+			)}
+		>
 			<nav>
 				<NavigationMenu className='flex justify-around'>
 					<NavigationMenuList className='flex flex-row gap-7'>

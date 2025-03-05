@@ -15,7 +15,7 @@ export default function Home() {
 					carouselCards={shoeCardData as IProductCardProps[]}
 				/>
 			</section>
-			<section className='pl-4 pr-0 min-[1024px]:px-0'>
+			<section className='px-4 min-[1024px]:px-0'>
 				<Featured />
 			</section>
 			<section className='pl-4 pr-0 min-[1024px]:px-0'>

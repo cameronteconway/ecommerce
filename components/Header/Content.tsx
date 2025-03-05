@@ -1,24 +1,28 @@
 import { Button } from "../Button";
 import Search from "./Search";
+import StaticNavigation from "./StaticNavigation";
 
 export default function Content() {
 	return (
 		<div className='py-2'>
 			<div className='mx-auto flex max-w-screen-lg flex-row items-center justify-between'>
-				<svg
-					xmlns='http://www.w3.org/2000/svg'
-					fill='none'
-					viewBox='0 0 24 24'
-					strokeWidth={1.5}
-					stroke='currentColor'
-					className='ml-1 size-8 fill-black'
-				>
-					<path
-						strokeLinecap='round'
-						strokeLinejoin='round'
-						d='m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z'
-					/>
-				</svg>
+				<div className='flex flex-row items-center gap-5'>
+					<svg
+						xmlns='http://www.w3.org/2000/svg'
+						fill='none'
+						viewBox='0 0 24 24'
+						strokeWidth={1.5}
+						stroke='currentColor'
+						className='ml-1 size-8 fill-black'
+					>
+						<path
+							strokeLinecap='round'
+							strokeLinejoin='round'
+							d='m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z'
+						/>
+					</svg>
+					<StaticNavigation />
+				</div>
 
 				<div className='flex flex-row items-center gap-2'>
 					<Search />

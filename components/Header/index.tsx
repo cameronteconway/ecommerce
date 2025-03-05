@@ -1,13 +1,13 @@
 import Banner from "@/components/Header/Banner";
 import Content from "@/components/Header/Content";
-import Navigation from "@/components/Header/Navigation";
+import FixedNavigation from "@/components/Header/FixedNavigation";
 
 export default function Header() {
 	return (
 		<div className='w-full'>
 			<Banner />
 			<Content />
-			<Navigation />
+			<FixedNavigation />
 		</div>
 	);
 }
