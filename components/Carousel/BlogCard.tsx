@@ -16,7 +16,7 @@ export default function BlogCard({
 				alt={"test"}
 				width={600}
 				height={400}
-				className='h-auto w-full'
+				className='h-auto w-full rounded-md'
 			/>
 			<div className='flex flex-col gap-1'>
 				<span className='text-sm font-medium text-gray-900'>{title}</span>
