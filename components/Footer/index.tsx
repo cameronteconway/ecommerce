@@ -1,4 +1,5 @@
 import { footer } from "@/data";
+import Link from "next/link";
 
 export default function Footer() {
 	return (
@@ -28,12 +29,12 @@ export default function Footer() {
 								<ul className='flex flex-col gap-2'>
 									{column.links.map((link, index) => (
 										<li key={`link-${index}`}>
-											<a
-												className='text-sm font-normal text-primaryBlack'
+											<Link
+												className='text-sm font-normal text-primaryBlack focus-within:underline hover:underline'
 												href={link.link}
 											>
 												{link.text}
-											</a>
+											</Link>
 										</li>
 									))}
 								</ul>

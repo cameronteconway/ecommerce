@@ -1,6 +1,7 @@
 import Carousel from "@/components/Carousel";
 import Featured from "@/components/Featured";
 import HomeVideo from "@/components/Hero/HomeVideo";
+import QuickLinks from "@/components/QuickLinks";
 import { blogCardData, shoeCardData } from "@/data";
 import { IBlogCardProps, IProductCardProps } from "@/lib/types";
 
@@ -17,6 +18,9 @@ export default function Home() {
 			</section>
 			<section className='px-4 min-[1024px]:px-0'>
 				<Featured />
+			</section>
+			<section className='px-4 min-[1024px]:px-0'>
+				<QuickLinks />
 			</section>
 			<section className='pl-4 pr-0 min-[1024px]:px-0'>
 				<Carousel

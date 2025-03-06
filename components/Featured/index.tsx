@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Featured() {
 	return (
-		<div>
+		<>
 			<div className='mb-6 flex flex-col'>
 				<h2 className='block text-xl font-bold tracking-tighter text-primaryBlack'>
 					Featured
@@ -49,6 +49,6 @@ export default function Featured() {
 					</span>
 				</div>
 			</div>
-		</div>
+		</>
 	);
 }
