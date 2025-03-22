@@ -17,7 +17,7 @@ export default function HomeVideo() {
 						Cloudsurfer 2
 					</span>
 				</div>
-				<Button className='bg-gray-100/20 text-white [text-shadow:_1px_1px_0px_rgb(0_0_0_/_0.8)] hover:bg-gray-100/60'>
+				<Button className='text-md bg-gray-100/20 text-white [text-shadow:_1px_1px_0px_rgb(0_0_0_/_0.8)] hover:bg-gray-100/60'>
 					Shop Now
 				</Button>
 			</div>

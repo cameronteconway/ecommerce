@@ -2,9 +2,9 @@ import { Button } from "../Button";
 import Search from "./Search";
 import StaticNavigation from "./StaticNavigation";
 
-export default function Content() {
+export default function ContentDesktop() {
 	return (
-		<div className='py-2'>
+		<div className='hidden py-2 sm:block'>
 			<div className='mx-auto flex max-w-screen-lg flex-row items-center justify-between'>
 				<div className='flex flex-row items-center gap-5'>
 					<svg

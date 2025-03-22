@@ -1,4 +1,5 @@
 import Carousel from "@/components/Carousel";
+import EmailSubscription from "@/components/EmailSubscription";
 import Featured from "@/components/Featured";
 import HomeVideo from "@/components/Hero/HomeVideo";
 import QuickLinks from "@/components/QuickLinks";
@@ -29,6 +30,9 @@ export default function Home() {
 					carouselType='blog'
 					carouselCards={blogCardData as IBlogCardProps[]}
 				/>
+			</section>
+			<section className='px-4 min-[1024px]:px-0'>
+				<EmailSubscription />
 			</section>
 		</div>
 	);
