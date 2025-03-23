@@ -31,7 +31,7 @@ export default function FixedNavigation() {
 	return (
 		<div
 			className={cn(
-				"fixed left-0 right-0 top-4 z-50 mx-auto w-fit max-w-screen-lg rounded-full bg-gray-100/75 px-4 py-2 transition-all duration-300",
+				"fixed left-0 right-0 top-4 z-50 mx-auto hidden w-fit max-w-screen-lg rounded-full bg-gray-100/75 px-4 py-2 transition-all duration-300 sm:block",
 				scrollPosition > 400 ? "visible opacity-100" : "invisible opacity-0",
 			)}
 		>

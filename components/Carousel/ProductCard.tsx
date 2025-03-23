@@ -1,6 +1,7 @@
 import Image from "next/image";
-import { IProductCardProps } from "@/lib/types";
 import Link from "next/link";
+
+import { IProductCardProps } from "@/lib/types";
 
 export default function ProductCard({
 	id,

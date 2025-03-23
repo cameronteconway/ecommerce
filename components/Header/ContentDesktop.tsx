@@ -1,6 +1,6 @@
-import { Button } from "../Button";
-import Search from "./Search";
-import StaticNavigation from "./StaticNavigation";
+import { Button } from "@/components/Button";
+import Search from "@/components/Header/Search";
+import StaticNavigation from "@/components/Header/StaticNavigation";
 
 export default function ContentDesktop() {
 	return (
