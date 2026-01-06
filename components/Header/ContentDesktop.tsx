@@ -1,26 +1,29 @@
 import { Button } from "@/components/Button";
 import Search from "@/components/Header/Search";
 import StaticNavigation from "@/components/Header/StaticNavigation";
+import Link from "next/link";
 
 export default function ContentDesktop() {
 	return (
 		<div className='hidden py-2 sm:block'>
 			<div className='mx-auto flex max-w-screen-lg flex-row items-center justify-between'>
 				<div className='flex flex-row items-center gap-5'>
-					<svg
-						xmlns='http://www.w3.org/2000/svg'
-						fill='none'
-						viewBox='0 0 24 24'
-						strokeWidth={1.5}
-						stroke='currentColor'
-						className='ml-1 size-8 fill-black'
-					>
-						<path
-							strokeLinecap='round'
-							strokeLinejoin='round'
-							d='m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z'
-						/>
-					</svg>
+					<Link href={"/"} aria-label={"Go home"}>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							fill='none'
+							viewBox='0 0 24 24'
+							strokeWidth={1.5}
+							stroke='currentColor'
+							className='ml-1 size-8 fill-black'
+						>
+							<path
+								strokeLinecap='round'
+								strokeLinejoin='round'
+								d='m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z'
+							/>
+						</svg>
+					</Link>
 					<StaticNavigation />
 				</div>
 

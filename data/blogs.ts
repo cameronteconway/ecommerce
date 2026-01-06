@@ -4,7 +4,7 @@ export const blogs: IBlog[] = [
 	{
 		id: 2,
 		title: "How to Choose the Perfect Running Shoes",
-		handle: "test-blog-2",
+		handle: "choose-perfect-shoes",
 		summary:
 			"Choosing the right running shoes is key to comfort and performance.",
 		content: "This is he test blog content",
@@ -26,7 +26,7 @@ export const blogs: IBlog[] = [
 	{
 		id: 1,
 		title: "Step Up Your Run",
-		handle: "test-blog",
+		handle: "step-up-your-run",
 		summary: "The right the right shoes can solve common running problems.",
 		content: "This is he test blog content",
 		image: "/blog/running02-preview_compressed.webp",
@@ -56,3 +56,9 @@ export const blogCardData = blogs.map(blog => {
 		published: blog.published,
 	};
 });
+
+export const fetchBlogByHandle = (handle: string) => {
+	const blog = blogs.filter(blog => blog.handle === handle);
+
+	return blog;
+};
