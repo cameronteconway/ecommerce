@@ -26,7 +26,12 @@ export default function ContentDesktop() {
 
 				<div className='flex flex-row items-center gap-2'>
 					<Search />
-					<Button className='group' variant='icon' size='icon'>
+					<Button
+						className='group'
+						variant='icon'
+						size='icon'
+						aria-label='View your favourites'
+					>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							fill='none'
@@ -42,7 +47,7 @@ export default function ContentDesktop() {
 							/>
 						</svg>
 					</Button>
-					<Button variant='icon' size='icon'>
+					<Button variant='icon' size='icon' aria-label='View your bag'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							fill='none'
@@ -58,7 +63,7 @@ export default function ContentDesktop() {
 							/>
 						</svg>
 					</Button>
-					<Button variant='icon' size='icon'>
+					<Button variant='icon' size='icon' aria-label='View your profile'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							fill='none'

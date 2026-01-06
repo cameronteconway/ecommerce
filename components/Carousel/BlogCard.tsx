@@ -7,13 +7,15 @@ export default function BlogCard({
 	handle,
 	summary,
 	image,
+	imageAlt,
 	published,
 }: IBlogCardProps) {
 	return (
 		<Link href={`blog/${handle}`} className='group flex flex-col gap-4'>
 			<Image
 				src={image}
-				alt={"test"}
+				alt={imageAlt}
+				loading='lazy'
 				width={600}
 				height={400}
 				className='h-auto w-full rounded-md'

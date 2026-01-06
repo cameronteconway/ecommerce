@@ -16,6 +16,9 @@ export default function Featured() {
 					<Image
 						width={600}
 						height={600}
+						loading='lazy'
+						decoding='async'
+						sizes='(max-width: 639px) 600px, 330px'
 						className='aspect-square rounded-md'
 						src='/featured/asics-featured.webp'
 						alt='Man running in Asics shoes'
@@ -28,6 +31,9 @@ export default function Featured() {
 					<Image
 						width={600}
 						height={600}
+						loading='lazy'
+						decoding='async'
+						sizes='(max-width: 639px) 600px, 330px'
 						className='aspect-square rounded-md'
 						src='/featured/nike-featured.webp'
 						alt='Man running in Asics shoes'
@@ -40,6 +46,9 @@ export default function Featured() {
 					<Image
 						width={600}
 						height={600}
+						loading='lazy'
+						decoding='async'
+						sizes='(max-width: 639px) 600px, 330px'
 						className='aspect-square rounded-md'
 						src='/featured/on-featured.webp'
 						alt='Man running in Asics shoes'

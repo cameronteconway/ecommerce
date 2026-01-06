@@ -1,19 +1,30 @@
 import { Button } from "../Button";
 
 export default function HomeVideo() {
+	const textShadow = "[text-shadow:_2px_2px_2px_rgb(0_0_0_/_0.8)]";
+
 	return (
 		<div className='relative z-10'>
-			<video loop autoPlay={true} muted playsInline>
+			<video
+				loop
+				autoPlay={true}
+				muted
+				playsInline
+				preload='auto'
+				poster='/video_thumbnail.webp'
+			>
 				<source src='/0abfcbfa-985dd232.mp4' type='video/mp4' />
 				Your browser does not support the video tag. I suggest you upgrade your
 				browser.
 			</video>
 			<div className='absolute bottom-6 left-6 flex flex-col gap-4'>
 				<div className='flex flex-col'>
-					<span className='block text-base font-bold text-white [text-shadow:_2px_2px_2px_rgb(0_0_0_/_0.8)]'>
+					<span
+						className={`block text-base font-bold text-white ${textShadow}`}
+					>
 						ON
 					</span>
-					<span className='block text-3xl font-bold text-white [text-shadow:_2px_2px_2px_rgb(0_0_0_/_0.8)]'>
+					<span className={`block text-3xl font-bold text-white ${textShadow}`}>
 						Cloudsurfer 2
 					</span>
 				</div>

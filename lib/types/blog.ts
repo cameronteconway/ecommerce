@@ -3,6 +3,7 @@ export interface IBlog {
 	handle: string;
 	id: number;
 	image: string;
+	imageAlt: string;
 	published: Date;
 	summary: string;
 	title: string;
@@ -11,6 +12,7 @@ export interface IBlog {
 export interface IBlogCardProps {
 	handle: string;
 	image: string;
+	imageAlt: string;
 	published: Date;
 	summary: string;
 	title: string;

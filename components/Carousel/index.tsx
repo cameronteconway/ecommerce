@@ -41,13 +41,14 @@ const CardMap: TCardMapType = {
 		);
 	},
 	blog: (card: unknown) => {
-		const { title, handle, summary, image, published } =
+		const { title, handle, summary, image, imageAlt, published } =
 			(card as IBlogCardProps) ?? {};
 		return (
 			<BlogCard
 				title={title}
 				handle={handle}
 				image={image}
+				imageAlt={imageAlt}
 				summary={summary}
 				published={published}
 			/>
@@ -143,7 +144,11 @@ export default function Carousel({
 						})}
 				</div>
 				<div className='mx-auto hidden w-[340px] md:block'>
-					<Progress value={progress} />
+					<Progress
+						role='progressbar'
+						aria-label='Visual indicator for progress on carousel scroll'
+						value={progress}
+					/>
 				</div>
 			</div>
 		</div>

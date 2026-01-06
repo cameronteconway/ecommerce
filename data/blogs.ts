@@ -9,6 +9,7 @@ export const blogs: IBlog[] = [
 			"Choosing the right running shoes is key to comfort and performance.",
 		content: "This is he test blog content",
 		image: "/blog/running05-preview_compressed.webp",
+		imageAlt: "Bottom half of a person running on road",
 		published: new Date("2025-02-06"),
 	},
 	{
@@ -19,6 +20,7 @@ export const blogs: IBlog[] = [
 			"Learn how to find and maintain the right running pace to boost your performance.",
 		content: "This is he test blog content",
 		image: "/blog/running06-preview_compressed.webp",
+		imageAlt: "A group of runners on a bridge",
 		published: new Date("2025-01-29"),
 	},
 	{
@@ -28,9 +30,9 @@ export const blogs: IBlog[] = [
 		summary: "The right the right shoes can solve common running problems.",
 		content: "This is he test blog content",
 		image: "/blog/running02-preview_compressed.webp",
+		imageAlt: "A person in the distance running up a rocky hill",
 		published: new Date("2025-01-12"),
 	},
-
 	{
 		id: 2,
 		title: "From Couch to 5K",
@@ -39,6 +41,7 @@ export const blogs: IBlog[] = [
 			"Starting your 5K journey begins with the right pair of running shoes.",
 		content: "This is he test blog content",
 		image: "/blog/running03-preview_compressed.webp",
+		imageAlt: "Zoomed in running track",
 		published: new Date("2025-01-02"),
 	},
 ];
@@ -48,6 +51,7 @@ export const blogCardData = blogs.map(blog => {
 		title: blog.title,
 		handle: blog.handle,
 		image: blog.image,
+		imageAlt: blog.imageAlt,
 		summary: blog.summary,
 		published: blog.published,
 	};

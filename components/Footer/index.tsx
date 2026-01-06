@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
 	return (
-		<footer className='mx-auto mt-32 flex max-w-screen-lg flex-col gap-20 pb-5'>
+		<footer className='mx-auto mt-32 flex max-w-screen-lg flex-col gap-20 px-4 pb-5 min-[1024px]:px-0'>
 			<div className='flex flex-row justify-between'>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
@@ -11,7 +11,7 @@ export default function Footer() {
 					viewBox='0 0 24 24'
 					strokeWidth={1.5}
 					stroke='currentColor'
-					className='ml-1 size-8 fill-black'
+					className='size-8 fill-black'
 				>
 					<path
 						strokeLinecap='round'
@@ -19,7 +19,7 @@ export default function Footer() {
 						d='m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z'
 					/>
 				</svg>
-				<div className='flex flex-row gap-10'>
+				<div className='grid grid-cols-2 gap-10 sm:flex sm:flex-row'>
 					{footer.columns.map(column => {
 						return (
 							<div key={`${column.title.toLocaleLowerCase()}-column`}>

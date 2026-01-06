@@ -15,6 +15,7 @@ export default function Search() {
 				variant='icon'
 				size='icon'
 				className='absolute right-2 top-2.5 size-5'
+				aria-label='Search button'
 			>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
