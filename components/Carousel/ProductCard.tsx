@@ -13,7 +13,13 @@ export default function ProductCard({
 	return (
 		<Link href={`shoes/${handle}/${id}`} className='group flex flex-col gap-2'>
 			<div className='relative aspect-square'>
-				<Image src={image.src} alt={image.alt} fill className='size-full' />
+				<Image
+					src={image.src}
+					alt={image.alt}
+					height={300}
+					width={300}
+					className='size-full'
+				/>
 			</div>
 			<div className='flex flex-col'>
 				<span className='block text-sm font-medium text-gray-900 group-focus-within:underline group-hover:underline'>

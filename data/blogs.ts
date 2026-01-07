@@ -62,3 +62,11 @@ export const fetchBlogByHandle = (handle: string) => {
 
 	return blog;
 };
+
+export const fetchBlogsByPublishDate = () => {
+	const orderedBlogs = blogs.sort(
+		(a, b) => new Date(b.published).getTime() - new Date(a.published).getTime(),
+	);
+
+	return orderedBlogs;
+};

@@ -32,7 +32,7 @@ export default async function BlogPage({ params }: PageProps) {
 	const post = blog[0];
 
 	return (
-		<>
+		<div className='px-4 min-[1024px]:px-0'>
 			<Breadcrumbs currentPageTitle={post.title} />
 			<article>
 				<header>
@@ -106,6 +106,6 @@ export default async function BlogPage({ params }: PageProps) {
 					</span>
 				</div>
 			</article>
-		</>
+		</div>
 	);
 }
