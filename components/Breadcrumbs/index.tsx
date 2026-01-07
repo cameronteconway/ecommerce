@@ -40,7 +40,7 @@ export default function BreadCrumbs({
 	return (
 		<nav aria-label='Breadcrumbs' className='my-10'>
 			<ol className='flex flex-row items-center gap-2'>
-				<li key={"home"}>
+				<li>
 					<Link
 						href='/'
 						className='text-sm font-light opacity-75 focus-within:underline hover:underline'
