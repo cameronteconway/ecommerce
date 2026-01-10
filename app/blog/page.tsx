@@ -6,7 +6,7 @@ export default function Blogs() {
 	const blogs = fetchBlogsByPublishDate();
 
 	return (
-		<div className='px-4 min-[1024px]:px-0'>
+		<div className='px-4 min-[1040px]:px-0'>
 			<Breadcrumbs />
 			<div>
 				<header>

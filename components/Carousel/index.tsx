@@ -6,12 +6,18 @@ import { Progress } from "@/components/Progress";
 import ProductCard from "@/components/Carousel/ProductCard";
 import { cn } from "@/lib/utils";
 import BlogCard from "@/components/Carousel/BlogCard";
+import Link from "next/link";
+import { buttonVariants } from "../Button";
 
 interface ICarouselProps {
 	carouselCards: IProductCardProps[] | IBlogCardProps[];
 	carouselType: "product" | "blog";
 	description?: string;
 	title?: string;
+	cta?: {
+		href: string;
+		label: string;
+	};
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -61,6 +67,7 @@ export default function Carousel({
 	carouselType,
 	description,
 	title,
+	cta,
 }: ICarouselProps) {
 	const [progress, setProgress] = useState<number>(
 		Math.round((3.25 / carouselCards.length) * 100),
@@ -109,18 +116,59 @@ export default function Carousel({
 		});
 	});
 
+	const headerContent = (
+		title: string | undefined,
+		description: string | undefined,
+	) => (
+		<div className={cn("flex flex-col", title || description ? "mb-6" : "")}>
+			{title && (
+				<h2 className='block text-xl font-bold tracking-tighter text-primaryBlack'>
+					{title}
+				</h2>
+			)}
+			{description && (
+				<p className='text-sm font-normal text-gray-600'>{description}</p>
+			)}
+		</div>
+	);
+
 	return (
 		<div>
-			<div className={cn("flex flex-col", title || description ? "mb-6" : "")}>
-				{title && (
-					<h2 className='block text-xl font-bold tracking-tighter text-primaryBlack'>
-						{title}
-					</h2>
-				)}
-				{description && (
-					<p className='text-sm font-normal text-gray-600'>{description}</p>
-				)}
-			</div>
+			{cta ? (
+				<div className='flex flex-col justify-between pr-4 md:flex-row min-[1040px]:pr-0'>
+					{headerContent(title, description)}
+					<Link
+						href={cta.href}
+						aria-label='Go to blogs'
+						className={cn(
+							buttonVariants({
+								variant: "default",
+								size: "lg",
+								className:
+									"group mb-6 flex w-fit flex-row gap-1 rounded-full border-primaryBlack",
+							}),
+						)}
+					>
+						<span className='font-normal text-primaryBlack'>{cta.label}</span>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							fill='none'
+							viewBox='0 0 24 24'
+							strokeWidth={2}
+							stroke='currentColor'
+							className='size-3 transition-all duration-300 group-focus-within:rotate-45 group-hover:rotate-45'
+						>
+							<path
+								strokeLinecap='round'
+								strokeLinejoin='round'
+								d='m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25'
+							/>
+						</svg>
+					</Link>
+				</div>
+			) : (
+				headerContent(title, description)
+			)}
 			<div role='region' className='flex w-full flex-col gap-10'>
 				<div
 					className='no-scrollbar max-h-auto flex w-full flex-row flex-nowrap overflow-x-auto overflow-y-hidden'
