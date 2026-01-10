@@ -11,6 +11,7 @@ export type ShoeSize =
 	| 5
 	| 5.5
 	| 6
+	| 6.5
 	| 7
 	| 7.5
 	| 8
@@ -96,7 +97,7 @@ export interface IShoe {
 	/**
 	 * @example 10
 	 */
-	shoe_size: ShoeSize;
+	shoe_size: ShoeSize[];
 
 	/**
 	 * @example "Track"

@@ -6,12 +6,11 @@ import { IProductCardProps } from "@/lib/types";
 export default function ProductCard({
 	id,
 	brand,
-	handle,
 	image,
 	title,
 }: IProductCardProps) {
 	return (
-		<Link href={`shoes/${handle}/${id}`} className='group flex flex-col gap-2'>
+		<Link href={`shoes/${id}`} className='group flex flex-col gap-2'>
 			<div className='relative aspect-square'>
 				<Image
 					src={image.src}

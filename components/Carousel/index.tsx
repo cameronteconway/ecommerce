@@ -34,17 +34,8 @@ type TCardMapType = {
 
 const CardMap: TCardMapType = {
 	product: (card: unknown) => {
-		const { id, brand, handle, image, title } =
-			(card as IProductCardProps) ?? {};
-		return (
-			<ProductCard
-				id={id}
-				brand={brand}
-				handle={handle}
-				image={image}
-				title={title}
-			/>
-		);
+		const { id, brand, image, title } = (card as IProductCardProps) ?? {};
+		return <ProductCard id={id} brand={brand} image={image} title={title} />;
 	},
 	blog: (card: unknown) => {
 		const { title, handle, summary, image, imageAlt, published } =
@@ -135,7 +126,7 @@ export default function Carousel({
 	return (
 		<div>
 			{cta ? (
-				<div className='flex flex-col justify-between pr-4 md:flex-row min-[1040px]:pr-0'>
+				<div className='flex flex-col justify-between pr-4 md:flex-row min-[1080px]:pr-0'>
 					{headerContent(title, description)}
 					<Link
 						href={cta.href}

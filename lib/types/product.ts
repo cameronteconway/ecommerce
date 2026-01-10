@@ -20,39 +20,9 @@ export interface IProductImage {
 	alt: string;
 
 	/**
-	 * @readonly
-	 */
-	readonly colour_id: number;
-
-	/**
-	 * @example 250
-	 */
-	height: number;
-
-	/**
-	 * @readonly
-	 */
-	readonly id: number;
-
-	/**
-	 * @example 1
-	 */
-	position: number;
-
-	/**
-	 * @readonly
-	 */
-	readonly product_id: number;
-
-	/**
 	 * @example "/images/products/main_image.jpg"
 	 */
 	src: string;
-
-	/**
-	 * @example 250
-	 */
-	width: number;
 }
 
 /**
@@ -83,7 +53,6 @@ export interface IProductColour {
 export interface IProductCardProps {
 	id: number;
 	brand: Brand;
-	handle: string;
 	image: IProductImage;
 	title: string;
 }

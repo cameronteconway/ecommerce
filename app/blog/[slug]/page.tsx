@@ -10,13 +10,13 @@ import { fetchBlogByHandle } from "@/data";
 // Add tags
 // Add animations for title
 
-interface PageProps {
-	params: {
+export default async function BlogPage({
+	params,
+}: {
+	params: Promise<{
 		slug: string;
-	};
-}
-
-export default async function BlogPage({ params }: PageProps) {
+	}>;
+}) {
 	const { slug } = await params;
 
 	if (!slug) {
@@ -32,7 +32,7 @@ export default async function BlogPage({ params }: PageProps) {
 	const post = blog[0];
 
 	return (
-		<div className='px-4 min-[1040px]:px-0'>
+		<div className='px-4 min-[1080px]:px-0'>
 			<Breadcrumbs currentPageTitle={post.title} />
 			<article>
 				<header>
