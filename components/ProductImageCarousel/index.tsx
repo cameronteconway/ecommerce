@@ -51,6 +51,9 @@ export default function ProductImageCarousel({
 			</div>
 			{/* Main image */}
 			<div className='relative aspect-square h-fit w-full min-w-[300px] max-w-full'>
+				<span className='absolute left-4 top-4 text-primaryBlack/50'>
+					{selectedIndex + 1}/{images.length}
+				</span>
 				<Image
 					src={images[selectedIndex].src}
 					alt={images[selectedIndex].alt}

@@ -50,6 +50,8 @@ export interface IProductColour {
 	value: string;
 }
 
+export type IProductType = "brand" | "size";
+
 export interface IProductCardProps {
 	id: number;
 	brand: Brand;

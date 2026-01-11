@@ -22,8 +22,6 @@ export default function BreadCrumbs({
 }) {
 	const pathname = usePathname();
 
-	console.log(currentPageTitle);
-
 	// Get each segment of the path
 	const segments = pathname.split("/").filter(Boolean);
 

@@ -127,71 +127,71 @@ export default function ContentMobile() {
 										</Button>
 									</div>
 									<ul className='flex flex-col gap-5'>
-										<li className='flex flex-row items-center justify-between'>
+										<li>
 											<Link
-												className='text-lg font-bold tracking-tighter text-primaryBlack'
-												href={"#"}
+												className='flex flex-row items-center justify-between text-lg font-bold tracking-tighter text-primaryBlack'
+												href={"/shoes"}
 											>
-												Road
+												<span>Road</span>
+												<svg
+													xmlns='http://www.w3.org/2000/svg'
+													fill='none'
+													viewBox='0 0 24 24'
+													strokeWidth={2}
+													stroke='currentColor'
+													className='size-5'
+												>
+													<path
+														strokeLinecap='round'
+														strokeLinejoin='round'
+														d='m8.25 4.5 7.5 7.5-7.5 7.5'
+													/>
+												</svg>
 											</Link>
-											<svg
-												xmlns='http://www.w3.org/2000/svg'
-												fill='none'
-												viewBox='0 0 24 24'
-												strokeWidth={2}
-												stroke='currentColor'
-												className='size-5'
-											>
-												<path
-													strokeLinecap='round'
-													strokeLinejoin='round'
-													d='m8.25 4.5 7.5 7.5-7.5 7.5'
-												/>
-											</svg>
 										</li>
-										<li className='flex flex-row items-center justify-between'>
+										<li>
 											<Link
-												className='text-lg font-bold tracking-tighter text-primaryBlack'
-												href={"#"}
+												className='flex flex-row items-center justify-between text-lg font-bold tracking-tighter text-primaryBlack'
+												href={"/shoes"}
 											>
-												Racing
+												<span>Racing</span>
+												<svg
+													xmlns='http://www.w3.org/2000/svg'
+													fill='none'
+													viewBox='0 0 24 24'
+													strokeWidth={2}
+													stroke='currentColor'
+													className='size-5'
+												>
+													<path
+														strokeLinecap='round'
+														strokeLinejoin='round'
+														d='m8.25 4.5 7.5 7.5-7.5 7.5'
+													/>
+												</svg>
 											</Link>
-											<svg
-												xmlns='http://www.w3.org/2000/svg'
-												fill='none'
-												viewBox='0 0 24 24'
-												strokeWidth={2}
-												stroke='currentColor'
-												className='size-5'
-											>
-												<path
-													strokeLinecap='round'
-													strokeLinejoin='round'
-													d='m8.25 4.5 7.5 7.5-7.5 7.5'
-												/>
-											</svg>
 										</li>
-										<li className='flex flex-row items-center justify-between'>
+										<li>
 											<Link
-												className='text-lg font-bold tracking-tighter text-primaryBlack'
-												href={"#"}
+												className='flex flex-row items-center justify-between text-lg font-bold tracking-tighter text-primaryBlack'
+												href={"/shoes"}
 											>
-												Trail
+												<span>Trail</span>
+												<svg
+													xmlns='http://www.w3.org/2000/svg'
+													fill='none'
+													viewBox='0 0 24 24'
+													strokeWidth={2}
+													stroke='currentColor'
+													className='size-5'
+												>
+													<path
+														strokeLinecap='round'
+														strokeLinejoin='round'
+														d='m8.25 4.5 7.5 7.5-7.5 7.5'
+													/>
+												</svg>
 											</Link>
-											<svg
-												xmlns='http://www.w3.org/2000/svg'
-												fill='none'
-												viewBox='0 0 24 24'
-												strokeWidth={2}
-												stroke='currentColor'
-												className='size-5'
-											>
-												<path
-													strokeLinecap='round'
-													strokeLinejoin='round'
-													d='m8.25 4.5 7.5 7.5-7.5 7.5'
-												/>
-											</svg>
 										</li>
 									</ul>
 								</div>

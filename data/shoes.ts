@@ -1,6 +1,6 @@
 // https://shopify.dev/docs/api/admin-rest/2024-04/resources/product
 
-import { IShoe } from "@/lib/types";
+import { IShoe, ShoeSize } from "@/lib/types";
 
 export const shoes: IShoe[] = [
 	{
@@ -417,4 +417,20 @@ export const fetchProductById = (id: number) => {
 	const product = shoes.filter(shoe => shoe.id === id);
 
 	return product;
+};
+
+export const fetchAvailableBrands = () => {
+	const brands = [...new Set(shoes.map(shoe => shoe.brand))];
+
+	return brands;
+};
+
+export const fetchAvailableShoeSizes = () => {
+	const availableSizes: ShoeSize[] = [
+		...new Set(shoes.flatMap(shoe => shoe.shoe_size)),
+	];
+
+	availableSizes.sort((a, b) => a - b);
+
+	return availableSizes;
 };
