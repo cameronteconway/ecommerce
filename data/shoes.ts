@@ -13,27 +13,27 @@ export const shoes: IShoe[] = [
 		id: 1,
 		images: [
 			{
-				alt: "Cielo X1 2.0 Running Shoes by Hoka in a white, read and cyan colour scheme.",
+				alt: "Cielo X1 2.0 Running Shoes by Hoka in a white, read and cyan colour scheme. View from right.",
 				src: "/hoka-cielo-x1-20/main.jpg",
 			},
 			{
-				alt: "Cielo X1 2.0 Running Shoes by Hoka in a white, read and cyan colour scheme.",
+				alt: "Cielo X1 2.0 Running Shoes by Hoka in a white, read and cyan colour scheme. View from below.",
 				src: "/hoka-cielo-x1-20/HOK2921_1000_2__72165.jpg",
 			},
 			{
-				alt: "Cielo X1 2.0 Running Shoes by Hoka in a white, read and cyan colour scheme.",
+				alt: "Cielo X1 2.0 Running Shoes by Hoka in a white, read and cyan colour scheme. View from left.",
 				src: "/hoka-cielo-x1-20/HOK2921_1000_3__15065.jpg",
 			},
 			{
-				alt: "Cielo X1 2.0 Running Shoes by Hoka in a white, read and cyan colour scheme.",
+				alt: "Cielo X1 2.0 Running Shoes by Hoka in a white, read and cyan colour scheme. View from top.",
 				src: "/hoka-cielo-x1-20/HOK2921_1000_4__37637.jpg",
 			},
 			{
-				alt: "Cielo X1 2.0 Running Shoes by Hoka in a white, read and cyan colour scheme.",
+				alt: "Cielo X1 2.0 Running Shoes by Hoka in a white, read and cyan colour scheme. View from front right.",
 				src: "/hoka-cielo-x1-20/HOK2921_1000_5__23311.jpg",
 			},
 			{
-				alt: "Cielo X1 2.0 Running Shoes by Hoka in a white, read and cyan colour scheme.",
+				alt: "Cielo X1 2.0 Running Shoes by Hoka in a white, read and cyan colour scheme. View from front left.",
 				src: "/hoka-cielo-x1-20/HOK2921_1000_6__17295.jpg",
 			},
 		],
@@ -59,28 +59,28 @@ export const shoes: IShoe[] = [
 		id: 2,
 		images: [
 			{
-				alt: "FuelCell Rebel v4 Running Shoes by New Balance in hot mango with angora and black colour scheme.",
+				alt: "FuelCell Rebel v4 Running Shoes by New Balance in hot mango with angora and black colour scheme. View from right.",
 				src: "/new-balance-fuelcell-rebel-v4/main.jpg",
 			},
 			{
-				alt: "FuelCell Rebel v4 Running Shoes by New Balance in hot mango with angora and black colour scheme.",
+				alt: "FuelCell Rebel v4 Running Shoes by New Balance in hot mango with angora and black colour scheme. View from bottom.",
 				src: "/new-balance-fuelcell-rebel-v4/NEW695815_1000_2__45839.jpg",
 			},
 			{
-				alt: "FuelCell Rebel v4 Running Shoes by New Balance in hot mango with angora and black colour scheme.",
+				alt: "FuelCell Rebel v4 Running Shoes by New Balance in hot mango with angora and black colour scheme. View from top.",
 				src: "/new-balance-fuelcell-rebel-v4/NEW695815_1000_3__07782.jpg",
 			},
 
 			{
-				alt: "FuelCell Rebel v4 Running Shoes by New Balance in hot mango with angora and black colour scheme.",
+				alt: "FuelCell Rebel v4 Running Shoes by New Balance in hot mango with angora and black colour scheme. View from left.",
 				src: "/new-balance-fuelcell-rebel-v4/NEW695815_1000_4__76337.jpg",
 			},
 			{
-				alt: "FuelCell Rebel v4 Running Shoes by New Balance in hot mango with angora and black colour scheme.",
+				alt: "FuelCell Rebel v4 Running Shoes by New Balance in hot mango with angora and black colour scheme. View from back.",
 				src: "/new-balance-fuelcell-rebel-v4/NEW695815_1000_5__17737.jpg",
 			},
 			{
-				alt: "FuelCell Rebel v4 Running Shoes by New Balance in hot mango with angora and black colour scheme.",
+				alt: "FuelCell Rebel v4 Running Shoes by New Balance in hot mango with angora and black colour scheme. View from front right.",
 				src: "/new-balance-fuelcell-rebel-v4/NEW695815_1000_6__90812.jpg",
 			},
 		],
@@ -102,8 +102,28 @@ export const shoes: IShoe[] = [
 		id: 3,
 		images: [
 			{
-				alt: "Gel-Cumulus 27 Running Shoes by Asics in a taupe grey and black colour scheme.",
+				alt: "Gel-Cumulus 27 Running Shoes by Asics in a taupe grey and black colour scheme. View from front right.",
 				src: "/asics-gel-cumulus-27/main.jpg",
+			},
+			{
+				alt: "Gel-Cumulus 27 Running Shoes by Asics in a taupe grey and black colour scheme. View from bottom.",
+				src: "/asics-gel-cumulus-27/ASI15672_1000_2__85494.jpg",
+			},
+			{
+				alt: "Gel-Cumulus 27 Running Shoes by Asics in a taupe grey and black colour scheme. View from right.",
+				src: "/asics-gel-cumulus-27/ASI15672_1000_3__31148.jpg",
+			},
+			{
+				alt: "Gel-Cumulus 27 Running Shoes by Asics in a taupe grey and black colour scheme. View from left.",
+				src: "/asics-gel-cumulus-27/ASI15672_1000_4__90370.jpg",
+			},
+			{
+				alt: "Gel-Cumulus 27 Running Shoes by Asics in a taupe grey and black colour scheme.  View from top.",
+				src: "/asics-gel-cumulus-27/ASI15672_1000_5__74838.jpg",
+			},
+			{
+				alt: "Gel-Cumulus 27 Running Shoes by Asics in a taupe grey and black colour scheme. View from back.",
+				src: "/asics-gel-cumulus-27/ASI15672_1000_6__25444.jpg",
 			},
 		],
 		price: 139.99,
@@ -126,8 +146,28 @@ export const shoes: IShoe[] = [
 		id: 4,
 		images: [
 			{
-				alt: "Hyperion Elite 4 PB Running Shoes by Brooks in a bluewash, green gecko and cobalt colour scheme.",
+				alt: "Hyperion Elite 4 PB Running Shoes by Brooks in a bluewash, green gecko and cobalt colour scheme. View from right.",
 				src: "/brooks-hyerion-elite-4-pb/main.jpg",
+			},
+			{
+				alt: "Hyperion Elite 4 PB Running Shoes by Brooks in a bluewash, green gecko and cobalt colour scheme. View from right bottom.",
+				src: "/brooks-hyerion-elite-4-pb/BRO3281_1000_8__30161.jpg",
+			},
+			{
+				alt: "Hyperion Elite 4 PB Running Shoes by Brooks in a bluewash, green gecko and cobalt colour scheme. View from left.",
+				src: "/brooks-hyerion-elite-4-pb/BRO3281_1000_9__34299.jpg",
+			},
+			{
+				alt: "Hyperion Elite 4 PB Running Shoes by Brooks in a bluewash, green gecko and cobalt colour scheme. View from top.",
+				src: "/brooks-hyerion-elite-4-pb/BRO3281_1000_10__52687.jpg",
+			},
+			{
+				alt: "Hyperion Elite 4 PB Running Shoes by Brooks in a bluewash, green gecko and cobalt colour scheme. View from back.",
+				src: "/brooks-hyerion-elite-4-pb/BRO3281_1000_11__99047.jpg",
+			},
+			{
+				alt: "Hyperion Elite 4 PB Running Shoes by Brooks in a bluewash, green gecko and cobalt colour scheme. View from front right.",
+				src: "/brooks-hyerion-elite-4-pb/BRO3281_1000_12__74342.jpg",
 			},
 		],
 		price: 200.0,
@@ -146,8 +186,29 @@ export const shoes: IShoe[] = [
 		id: 5,
 		images: [
 			{
-				alt: "Bondi 9 Running Shoes by Hoka in a galactic grey and stellar grey colour scheme.",
+				alt: "Bondi 9 Running Shoes by Hoka in a galactic grey and stellar grey colour scheme. View from right.",
 				src: "/hoka-bondi-9/main.jpg",
+			},
+
+			{
+				alt: "Bondi 9 Running Shoes by Hoka in a galactic grey and stellar grey colour scheme. View from bottom.",
+				src: "/hoka-bondi-9/HOK2832_1000_2__80078.jpg",
+			},
+			{
+				alt: "Bondi 9 Running Shoes by Hoka in a galactic grey and stellar grey colour scheme. View from left.",
+				src: "/hoka-bondi-9/HOK2832_1000_3__46279.jpg",
+			},
+			{
+				alt: "Bondi 9 Running Shoes by Hoka in a galactic grey and stellar grey colour scheme. View from top.",
+				src: "/hoka-bondi-9/HOK2832_1000_4__23088.jpg",
+			},
+			{
+				alt: "Bondi 9 Running Shoes by Hoka in a galactic grey and stellar grey colour scheme. View from front right.",
+				src: "/hoka-bondi-9/HOK2832_1000_5__50678.jpg",
+			},
+			{
+				alt: "Bondi 9 Running Shoes by Hoka in a galactic grey and stellar grey colour scheme. View from front left.",
+				src: "/hoka-bondi-9/HOK2832_1000_6__37425.jpg",
 			},
 		],
 		price: 159.99,
@@ -170,8 +231,28 @@ export const shoes: IShoe[] = [
 		id: 6,
 		images: [
 			{
-				alt: "On Cloudsurfer 2 Running Shoes by On in a glacier and ivory colour scheme.",
+				alt: "On Cloudsurfer 2 Running Shoes by On in a glacier and ivory colour scheme. View from right.",
 				src: "/on-cloudsurfer-2/main.jpg",
+			},
+			{
+				alt: "On Cloudsurfer 2 Running Shoes by On in a glacier and ivory colour scheme. View from bottom.",
+				src: "/on-cloudsurfer-2/ONR430_1000_2__20607.jpg",
+			},
+			{
+				alt: "On Cloudsurfer 2 Running Shoes by On in a glacier and ivory colour scheme. View from left.",
+				src: "/on-cloudsurfer-2/ONR430_1000_3__32673.jpg",
+			},
+			{
+				alt: "On Cloudsurfer 2 Running Shoes by On in a glacier and ivory colour scheme. View from top.",
+				src: "/on-cloudsurfer-2/ONR430_1000_4__14866.jpg",
+			},
+			{
+				alt: "On Cloudsurfer 2 Running Shoes by On in a glacier and ivory colour scheme. View from back.",
+				src: "/on-cloudsurfer-2/ONR430_1000_5__78303.jpg",
+			},
+			{
+				alt: "On Cloudsurfer 2 Running Shoes by On in a glacier and ivory colour scheme. View from front right.",
+				src: "/on-cloudsurfer-2/ONR430_1000_6__51592.jpg",
 			},
 		],
 		price: 149.99,
@@ -196,8 +277,28 @@ export const shoes: IShoe[] = [
 		id: 7,
 		images: [
 			{
-				alt: "Adizero Adios Pro 4 Running Shoes by Adidas in a pure sulfur, lucid blue and lucid red colour scheme.",
+				alt: "Adizero Adios Pro 4 Running Shoes by Adidas in a pure sulfur, lucid blue and lucid red colour scheme. View from right.",
 				src: "/adidas-adizero-adios-pro-4/main.jpg",
+			},
+			{
+				alt: "Adizero Adios Pro 4 Running Shoes by Adidas in a pure sulfur, lucid blue and lucid red colour scheme. View from bottom.",
+				src: "/adidas-adizero-adios-pro-4/ADI17705_1000_2__87004.jpg",
+			},
+			{
+				alt: "Adizero Adios Pro 4 Running Shoes by Adidas in a pure sulfur, lucid blue and lucid red colour scheme. View from left.",
+				src: "/adidas-adizero-adios-pro-4/ADI17705_1000_3__39476.jpg",
+			},
+			{
+				alt: "Adizero Adios Pro 4 Running Shoes by Adidas in a pure sulfur, lucid blue and lucid red colour scheme. View from top.",
+				src: "/adidas-adizero-adios-pro-4/ADI17705_1000_4__40827.jpg",
+			},
+			{
+				alt: "Adizero Adios Pro 4 Running Shoes by Adidas in a pure sulfur, lucid blue and lucid red colour scheme. View from front right.",
+				src: "/adidas-adizero-adios-pro-4/ADI17705_1000_5__05973.jpg",
+			},
+			{
+				alt: "Adizero Adios Pro 4 Running Shoes by Adidas in a pure sulfur, lucid blue and lucid red colour scheme. View from back right.",
+				src: "/adidas-adizero-adios-pro-4/ADI17705_1000_6__35796.jpg",
 			},
 		],
 		price: 219.99,
@@ -222,8 +323,28 @@ export const shoes: IShoe[] = [
 		id: 8,
 		images: [
 			{
-				alt: "Vomero 18 Running Shoes by Nike in a summit white, black and dusty cactus colour scheme.",
+				alt: "Vomero 18 Running Shoes by Nike in a summit white, black and dusty cactus colour scheme. View from front right.",
 				src: "/nike-vomero-18/main.jpg",
+			},
+			{
+				alt: "Vomero 18 Running Shoes by Nike in a summit white, black and dusty cactus colour scheme. View from bottom.",
+				src: "/nike-vomero-18/NIK23741_1000_2__21439.jpg",
+			},
+			{
+				alt: "Vomero 18 Running Shoes by Nike in a summit white, black and dusty cactus colour scheme. View from right.",
+				src: "/nike-vomero-18/NIK23741_1000_3__61038.jpg",
+			},
+			{
+				alt: "Vomero 18 Running Shoes by Nike in a summit white, black and dusty cactus colour scheme. View from left.",
+				src: "/nike-vomero-18/NIK23741_1000_4__09569.jpg",
+			},
+			{
+				alt: "Vomero 18 Running Shoes by Nike in a summit white, black and dusty cactus colour scheme. View from top.",
+				src: "/nike-vomero-18/NIK23741_1000_5__82073.jpg",
+			},
+			{
+				alt: "Vomero 18 Running Shoes by Nike in a summit white, black and dusty cactus colour scheme. View from back.",
+				src: "/nike-vomero-18/NIK23741_1000_6__70755.jpg",
 			},
 		],
 		price: 134.99,
@@ -237,7 +358,7 @@ export const shoes: IShoe[] = [
 		brand: "Saucony",
 		colours: [{ id: 1, product_id: 1, value: "Peach/Sunny" }],
 		description:
-			"Built for comfort and protection, the Guide 18 is a cushioned everyday trainer that combines soft and responsive PWRRUN foam with the exclusive Center Path Technology that keeps the foot centred and supported to deliver a best-in-class underfoot experience by maintaining a standard centerline, increasing the height of the sidewalls and building it on a rocker shape to ease toe-off.",
+			"Built for comfort and protection, the Guide 18 is a cushioned everyday trainer that combines soft and responsive PWRRUN foam with the exclusive Center Path Technology that keeps the foot centred and supported to deliver a best-in-class underfoot experience by maintaining a standard centerline, increasing the height of thewalls and building it on a rocker shape to ease toe-off.",
 		featured: true,
 		featuredImage: {
 			alt: "Guide 18 Running Shoes by Saucony in a peach and sunny colour scheme.",
@@ -247,8 +368,29 @@ export const shoes: IShoe[] = [
 		id: 9,
 		images: [
 			{
-				alt: "Guide 18 Running Shoes by Saucony in a peach and sunny colour scheme.",
+				alt: "Guide 18 Running Shoes by Saucony in a peach and sunny colour scheme. View from right.",
 				src: "/saucony-guide-18/main.jpg",
+			},
+
+			{
+				alt: "Guide 18 Running Shoes by Saucony in a peach and sunny colour scheme. View from bottom.",
+				src: "/saucony-guide-18/SAU5171_1000_2__66073.jpg",
+			},
+			{
+				alt: "Guide 18 Running Shoes by Saucony in a peach and sunny colour scheme. View from left.",
+				src: "/saucony-guide-18/SAU5171_1000_3__78376.jpg",
+			},
+			{
+				alt: "Guide 18 Running Shoes by Saucony in a peach and sunny colour scheme. View from top.",
+				src: "/saucony-guide-18/SAU5171_1000_4__11868.jpg",
+			},
+			{
+				alt: "Guide 18 Running Shoes by Saucony in a peach and sunny colour scheme. View from front right.",
+				src: "/saucony-guide-18/SAU5171_1000_5__87177.jpg",
+			},
+			{
+				alt: "Guide 18 Running Shoes by Saucony in a peach and sunny colour scheme. View from back.",
+				src: "/saucony-guide-18/SAU5171_1000_6__75352.jpg",
 			},
 		],
 		price: 129.99,

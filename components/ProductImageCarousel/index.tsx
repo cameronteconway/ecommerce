@@ -26,7 +26,7 @@ export default function ProductImageCarousel({
 			<div className='hidden w-[50px] min-w-[50px] flex-col gap-4 md:flex'>
 				{images.map((image, index) => {
 					return (
-						<>
+						<div key={`thumbnail-${index}`}>
 							<button
 								key={`product-image-${index}`}
 								onClick={() => setSelectedIndex(index)}
@@ -45,7 +45,7 @@ export default function ProductImageCarousel({
 								/>
 							</button>
 							{index !== images.length - 1 && <hr />}
-						</>
+						</div>
 					);
 				})}
 			</div>
