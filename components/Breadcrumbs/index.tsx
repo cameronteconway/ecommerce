@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import React from "react";
 
 interface IBreadcrumb {
 	label: string;
@@ -67,8 +68,8 @@ export default function BreadCrumbs({
 					const isLast = index === breadcrumbs.length - 1;
 
 					return (
-						<>
-							<li key={crumb.href}>
+						<React.Fragment key={crumb.href}>
+							<li>
 								{isLast ? (
 									<span aria-current='page' className='text-sm'>
 										{/* Display label unless page title is available */}
@@ -101,7 +102,7 @@ export default function BreadCrumbs({
 									/>
 								</svg>
 							)}
-						</>
+						</React.Fragment>
 					);
 				})}
 			</ol>

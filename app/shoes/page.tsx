@@ -49,14 +49,16 @@ export default function ProductListingPage() {
 			<Breadcrumbs currentPageTitle={"Shoes"} />
 			<div className='mb-8 flex flex-row items-center justify-between'>
 				<h1 className='text-3xl font-medium'>Our shoes</h1>
-				<div>
-					<Button aria-label='Clear product filters' onClick={clearFilters}>
-						Clear filters
-					</Button>
-				</div>
+				<Button
+					className='hidden md:flex'
+					aria-label='Clear product filters'
+					onClick={clearFilters}
+				>
+					Clear filters
+				</Button>
 			</div>
-			<div className='flex flex-row gap-4'>
-				<div className='col-span-1 flex min-w-[150px] max-w-[200px] flex-col gap-6'>
+			<div className='flex flex-col gap-4 md:flex-row'>
+				<div className='hidden min-w-[150px] max-w-[200px] flex-col gap-6 md:flex'>
 					<ProductFilter
 						productType={"brand"}
 						values={brands}
